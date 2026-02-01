@@ -1,7 +1,7 @@
 from src.models.repositories.interfaces.users_repository import UsersRepositoryInterface
 from .interfaces.user_creator import UserCreatorInterface
 
-class UsarCreator(UserCreatorInterface):
+class UserCreator(UserCreatorInterface):
     def __init__(self, users_repository: UsersRepositoryInterface): # Inversão da dependência - D SOLID
         self.__users_repo = users_repository
 

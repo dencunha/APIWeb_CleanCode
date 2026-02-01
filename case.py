@@ -7,4 +7,3 @@ class MinhaClasse:
 
 with MinhaClasse() as mc:
     print("Entrei no With")
-    

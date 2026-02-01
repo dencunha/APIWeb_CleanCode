@@ -1,5 +1,5 @@
 import pytest
-from .user_creator import UsarCreator
+from .user_creator import UserCreator
 
 #Classe Mock
 class UserRepositoryMock:
@@ -26,7 +26,7 @@ class UserRepositoryMockWithError:
 
 def test_insert_new_user():
     user_repository = UserRepositoryMock()
-    user_creator = UsarCreator(user_repository)
+    user_creator = UserCreator(user_repository)
 
     person_name = "my_peroaijsoiajs"
     age= 54
@@ -46,7 +46,7 @@ def test_insert_new_user():
 
 def test_insert_new_user_with_error():
     user_repository = UserRepositoryMockWithError()
-    user_creator = UsarCreator(user_repository)
+    user_creator = UserCreator(user_repository)
 
     with pytest.raises(Exception) as exc_info:
         user_creator.insert_new_user("something", 32, 1.88)
