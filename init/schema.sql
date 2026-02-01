@@ -3,4 +3,4 @@ CREATE TABLE users (
     person_name TEXT NOT NULL,
     age INTEGER,
     height REAL
-)
+);
