@@ -9,7 +9,7 @@ class UserRepositoryMock:
 
     def select_user(self, person_name: str) -> list:
         self.select_user_att["person_name"] = person_name
-        return[]
+        return []
 
     def insert_user(self, person_name: str, age: int, height: float) -> None:
         self.insert_user_att["person_name"] = person_name
