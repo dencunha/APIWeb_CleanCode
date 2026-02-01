@@ -8,6 +8,7 @@ disable=
       C0114, # missing-module-docstring
       C0115, # Missing function or method docstring
       w0703, # Catching too general exception Exception
+      R0903, #too-few-public-methods
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
