@@ -1,9 +1,12 @@
 [MAIN]
 
+[MASTER]
+init-hook="import sys; sys.path.append('venv/lib/python3.10/site-packages')"
+
 disable=
       C0116, # missing-function-docstring
       C0114, # missing-module-docstring
-      C0116, # Missing function or method docstring
+      C0115, # Missing function or method docstring
       w0703, # Catching too general exception Exception
 
 
